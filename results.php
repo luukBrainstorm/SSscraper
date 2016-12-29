@@ -2,4 +2,7 @@
 include "Scrape.php";
 $scrape = new Scrape();
 $scrape->scrapeListing($_POST["keyword"]);
-$scrape->getJobID();
+echo $scrape->getJobID();
+echo $scrape->getJobListing();
+echo $scrape->getEmail();
+$scrape->getLocation();
